@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <!--[if IE 8]><html class="ie8" ng-app="robloxApp"><![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="ja">
+<html lang="en">
     <!--<![endif]-->
     <head data-machine-id="9159917a-46d6-24e7-cb39-f7e036d3e69c">
         <!-- MachineID: 9159917a-46d6-24e7-cb39-f7e036d3e69c -->
-        <title>Robloxにログイン</title>
+        <title>Log in to Roblox</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,7 +34,7 @@
                 ]
             }</script>
         <meta ng-csp="no-unsafe-eval">
-        <meta name="locale-data" data-language-code="ja_jp" data-language-name="日本語" data-url-locale="" data-override-language-header="false"/>
+        <meta name="locale-data" data-language-code="en_us" data-language-name="English (United States)" data-url-locale="" data-override-language-header="false"/>
         <meta name="device-meta" data-device-type="computer" data-is-in-app="false" data-is-desktop="true" data-is-phone="false" data-is-tablet="false" data-is-console="false" data-is-android-app="false" data-is-ios-app="false" data-is-uwp-app="false" data-is-xbox-app="false" data-is-amazon-app="false" data-is-win32-app="false" data-is-studio="false" data-is-game-client-browser="false" data-is-ios-device="false" data-is-android-device="false" data-is-universal-app="false" data-app-type="unknown" data-is-chrome-os="false" data-is-pcgdk-app="false" data-is-samsung-galaxy-store-app="false"/>
         <meta name="environment-meta" data-domain="roblox.com" data-is-testing-site="false"/>
         <meta id="roblox-display-names" data-enabled="true"></meta>
@@ -75,7 +75,7 @@
         <link rel="stylesheet" onerror="Roblox.BundleDetector && Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Footer" data-bundle-source="Main" href="https://css.rbxcdn.com/9614df97076ece81a878442b453b2614a3c683cb83cde0b50a71ad6ac65051b8-Footer.css"/>
         <link rel="canonical" href="https://www.roblox.com/login"/>
         <link rel="alternate" href="https://www.roblox.com/login" hreflang="x-default"/>
-        <link rel="alternate" href="https://www.roblox.com/login" hreflang="ja"/>
+        <link rel="alternate" href="https://www.roblox.com/login" hreflang="en"/>
         <link rel="alternate" href="https://www.roblox.com/de/login" hreflang="de"/>
         <link rel="alternate" href="https://www.roblox.com/es/login" hreflang="es"/>
         <link rel="alternate" href="https://www.roblox.com/fr/login" hreflang="fr"/>
@@ -297,17 +297,17 @@
                 <div class="flex flex-col gap-medium">
                   <div class="flex flex-col gap-small">
                     <div data-testid="text-input-wrapper" class="flex width-full flex-col gap-small undefined">
-                      <label for="login-username" class="text-title-medium content-emphasis">ユーザー名、メール、または電話番号</label>
+                      <label for="login-username" class="text-title-medium content-emphasis">Username, email, or phone</label>
                       <div data-testid="text-input-container" class="flex items-center width-full stroke-standard focus-within:outline-focus height-1000 radius-medium padding-x-medium gap-x-small stroke-contrast-alpha">
-                        <input type="text" id="login-username" class="width-full padding-none bg-none stroke-none outline-none content-emphasis placeholder:content-muted text-body-medium placeholder:text-body-medium" aria-invalid="false" required="" minlength="3" autocomplete="username webauthn" placeholder="ユーザー名、メール、または電話番号" name="username" maxlength="320" value="" style="appearance: none;">
+                        <input type="text" id="login-username" class="width-full padding-none bg-none stroke-none outline-none content-emphasis placeholder:content-muted text-body-medium placeholder:text-body-medium" aria-invalid="false" required="" minlength="3" autocomplete="username webauthn" placeholder="Username, email, or phone" name="username" maxlength="320" value="" style="appearance: none;">
                       </div>
                     </div>
                   </div>
                   <div class="flex flex-col gap-small">
                     <div data-testid="text-input-wrapper" class="flex width-full flex-col gap-small relative">
-                      <label for="login-password" class="text-title-medium content-emphasis">パスワード</label>
+                      <label for="login-password" class="text-title-medium content-emphasis">Password</label>
                       <div data-testid="text-input-container" class="flex items-center width-full stroke-standard focus-within:outline-focus height-1000 radius-medium padding-x-medium gap-x-small stroke-contrast-alpha">
-                        <input type="password" id="login-password" class="width-full padding-none bg-none stroke-none outline-none content-emphasis placeholder:content-muted text-body-medium placeholder:text-body-medium" aria-invalid="false" required="" minlength="8" maxlength="200" autocomplete="current-password" placeholder="パスワード" name="password" value="" style="appearance: none;">
+                        <input type="password" id="login-password" class="width-full padding-none bg-none stroke-none outline-none content-emphasis placeholder:content-muted text-body-medium placeholder:text-body-medium" aria-invalid="false" required="" minlength="8" maxlength="200" autocomplete="current-password" placeholder="Password" name="password" value="" style="appearance: none;">
                         <div class="width-600 grow-0 shrink-0 basis-auto"></div>
                         <div class="absolute ltr:right-[0] rtl:left-[0]">
                           <button type="button" aria-label="Show Password" class="foundation-web-icon-button relative clip group/interactable focus-visible:outline-focus disabled:outline-none cursor-pointer relative flex items-center justify-center padding-none stroke-none select-none size-1000 radius-medium bg-action-link">
@@ -324,18 +324,18 @@
                 <div class="flex flex-col gap-medium">
                   <button type="button" id="login-button" onclick="login();" class="foundation-web-button relative clip group/interactable focus-visible:outline-focus disabled:outline-none cursor-pointer relative flex items-center justify-center stroke-none padding-y-none select-none radius-medium text-label-medium height-1000 padding-x-medium bg-action-emphasis content-action-emphasis" style="text-decoration: none;">
                     <div role="presentation" class="absolute inset-[0] transition-colors group-hover/interactable:bg-[var(--color-state-hover)] group-active/interactable:bg-[var(--color-state-press)] group-disabled/interactable:bg-none"></div>
-                    <span class="padding-y-xsmall text-truncate-end text-no-wrap">ログイン</span>
+                    <span class="padding-y-xsmall text-truncate-end text-no-wrap">Sign in</span>
                   </button>
                   <a aria-disabled="false" href="https://www.roblox.com/login/forgot-password-or-username" class="foundation-web-button relative clip group/interactable focus-visible:outline-focus disabled:outline-none cursor-pointer relative flex items-center justify-center stroke-none padding-y-none select-none radius-medium text-label-medium height-1000 padding-x-medium bg-action-subtle content-action-standard" style="text-decoration: none;">
                     <div role="presentation" class="absolute inset-[0] transition-colors group-hover/interactable:bg-[var(--color-state-hover)] group-active/interactable:bg-[var(--color-state-press)] group-disabled/interactable:bg-none"></div>
-                    <span class="padding-y-xsmall text-truncate-end text-no-wrap">パスワードまたはユーザー名を忘れましたか？</span>
+                    <span class="padding-y-xsmall text-truncate-end text-no-wrap">Forgot password or username?</span>
                   </a>
                 </div>
                 <div class="flex items-center gap-medium">
                   <div class="fill">
                     <div role="separator" data-orientation="horizontal" aria-orientation="horizontal" class="stroke-default self-stretch" style="border-right-width: 0px; border-bottom-width: 0px; box-sizing: border-box; border-style: solid; height: 0px; border-top-width: var(--stroke-standard); border-left-width: 0px;"></div>
                   </div>
-                  <span class="content-default text-label-medium">または</span>
+                  <span class="content-default text-label-medium">Or</span>
                   <div class="fill">
                     <div role="separator" data-orientation="horizontal" aria-orientation="horizontal" class="stroke-default self-stretch" style="border-right-width: 0px; border-bottom-width: 0px; box-sizing: border-box; border-style: solid; height: 0px; border-top-width: var(--stroke-standard); border-left-width: 0px;"></div>
                   </div>
@@ -358,7 +358,7 @@
                   <a aria-disabled="false" href="https://www.roblox.com/CreateAccount" class="foundation-web-button relative clip group/interactable focus-visible:outline-focus disabled:outline-none cursor-pointer relative flex items-center justify-center stroke-none padding-y-none select-none radius-medium text-label-medium height-1000 padding-x-medium bg-action-subtle content-action-standard" style="text-decoration: none;">
                     <div role="presentation" class="absolute inset-[0] transition-colors group-hover/interactable:bg-[var(--color-state-hover)] group-active/interactable:bg-[var(--color-state-press)] group-disabled/interactable:bg-none"></div>
                     <span class="padding-y-xsmall text-truncate-end text-no-wrap">
-                      <span>アカウントをお持ちでないですか？ <span style="text-decoration: underline; text-decoration-skip-ink: none;">新規登録</span>
+                      <span>Don't have an account? <span style="text-decoration: underline; text-decoration-skip-ink: none;">Create one</span>
                       </span>
                     </span>
                   </a>
